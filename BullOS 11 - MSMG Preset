@@ -1,4 +1,4 @@
-BullOS 11 MSMG:
+BullOS MSMG:
 
 Itt szoktam Mindent kiszedni:
 - Internet
@@ -6,7 +6,7 @@ Itt szoktam Mindent kiszedni:
 - Remoting
 
 Multimediaban ami marad:
-F, J, M
+B, F, J, M
 
 Privacyben -II-:
 G, I
@@ -15,15 +15,28 @@ System Componentben -II-:
 A, L, Q, T, W
 
 System Appsban -II-:
-01, 02, 07, 09, 13, 17, 22, 29, 38
+01, 02, 07, 09, 11, 13, 17, 22, 29, 38
 
 Windows Appsban -II-:
-20, 27
+02, 10, 20, 27, 30, 40, 41-45
+
+- Utána Starting Removing Windows Components!
 
 Integrálás:
+- Integrate menüben - Windows Features!
+
 D, E, G, H, P, Q, S
 
 Tweakek:
-A, B, C, D, E, F, G, H, J, K, N, O, P, Q, 
+- Customize menüben - Apply Tweaks!
+
+A, C, D, E, F, G, H, J, K, N, O, P, Q, 
 R, S, T, U, V, W, X
 
+ISO Save:
+- Apply menüben - Apply & Save Changes to Source Images!
+- Target menüben - Make a DVD ISO Image és mindent kitöltesz!
+
+Name: 
+
+BullOS-5.6-22H2-22621.1992-EN
