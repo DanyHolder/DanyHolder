@@ -1,34 +1,5 @@
 Windows Registry Editor Version 5.00 ---                                                  
 
-; Accounts Tab ( Disable Syncing )
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync]
-"SyncPolicy"=dword:00000005
-
-; disable prelaunch. lowers ram usage slightly
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
-"AllowPrelaunch"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader]
-"AllowTabPreloading"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
-"Enabled"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
-"Enabled"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
-"Enabled"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
-"Enabled"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"VerboseStatus"=dword:00000001
-
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR] 
 "AppCaptureEnabled"=dword:00000000
 
@@ -171,14 +142,6 @@ Windows Registry Editor Version 5.00 ---
 "FeatureSettingsOverride"=dword:00000003
 "FeatureSettingsOverrideMask"=dword:00000003
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"NoAutoUpdate"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoWindowsUpdate"=dword:00000001
-
 ; Folyamatok limitálása 70+ról 30ra
 ; lowers ram usage and process count by a lot
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
@@ -197,7 +160,7 @@ Windows Registry Editor Version 5.00 ---
 "Clock Rate"=dword:00002710
 "GPU Priority"=dword:00000008
 "Priority"=dword:00000006
-"Scheduling Category"="Medium"
+"Scheduling Category"="High"
 "SFIO Priority"="Normal"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Capture]
@@ -270,21 +233,15 @@ Windows Registry Editor Version 5.00 ---
 "Background Only"="False"
 "Clock Rate"=dword:00002710
 "GPU Priority"=dword:00000008
-"Priority"=dword:00000006
+"Priority"=dword:00000008
 "Scheduling Category"="High"
 "SFIO Priority"="High"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
-"SearchOrderConfig"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
-"HiberbootEnabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
-"PowerThrottlingOff"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-"HibernateEnabledDefault"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000000
 
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "MenuShowDelay"="0"
@@ -313,9 +270,6 @@ Windows Registry Editor Version 5.00 ---
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
 "DisableSearchBoxSuggestions"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config]
-"VulnerableDriverBlocklistEnable"=dword:00000000
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowCortana"=dword:00000000
 "AllowCortanaAboveLock"=dword:00000000
@@ -326,3 +280,6 @@ Windows Registry Editor Version 5.00 ---
 "ConnectedSearchUseWeb"=dword:00000000
 "ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
 "DisableWebSearch"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000000
