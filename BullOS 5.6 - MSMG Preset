@@ -1,15 +1,18 @@
 BullOS MSMG:
 
-Itt szoktam Mindent kiszedni:
-- Internet
-- Network
-- Remoting
+Internet tabon mindent törlök.
 
 Multimediaban ami marad:
 B, F, J, M
 
+Networkben -II-:
+2, 3, 4, 5, 7
+
 Privacyben -II-:
 G, I
+
+Routingban -II-:
+1, 2, 4, 5
 
 System Componentben -II-:
 A, L, Q, T, W
@@ -20,23 +23,13 @@ System Appsban -II-:
 Windows Appsban -II-:
 02, 10, 20, 27, 30, 40, 41-45
 
-- Utána Starting Removing Windows Components!
-
 Integrálás:
-- Integrate menüben - Windows Features!
 
 D, E, G, H, P, Q, S
 
+MSPaint
+
 Tweakek:
-- Customize menüben - Apply Tweaks!
 
 A, C, D, E, F, G, H, J, K, N, O, P, Q, 
 R, S, T, U, V, W, X
-
-ISO Save:
-- Apply menüben - Apply & Save Changes to Source Images!
-- Target menüben - Make a DVD ISO Image és mindent kitöltesz!
-
-Name: 
-
-BullOS-5.6-22H2-22621.1992-EN
