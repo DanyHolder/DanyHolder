@@ -12,9 +12,9 @@ Windows Registry Editor Version 5.00 ---
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "HwSchMode"=dword:00000002
 
-; Disable Variable Refresh Rate
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\DirectX\UserGpuPreferences]
-"DirectXUserGlobalSettings"="VRROptimizeEnable=0;"
+;Disable Graphics performance monitor service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
+"Start"=dword:00000004
 
 ; Ease of Access Tab ( Disable Ease Of Access Features )
 [HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys]
@@ -35,7 +35,7 @@ Windows Registry Editor Version 5.00 ---
 "Enabled"=dword:00000000
 
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
-"HttpAcceptLanguageOptOut"=dword:00000001
+"HttpAcceptLanguageOptOut"=dword:00000000
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "Start_TrackProgs"=dword:00000000
@@ -62,7 +62,7 @@ Windows Registry Editor Version 5.00 ---
 
 ; Diagnostics & Feedback Tab
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack]
-"ShowedToastAtLevel"=dword:00000001
+"ShowedToastAtLevel"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "AllowTelemetry"=dword:00000000
@@ -107,17 +107,8 @@ Windows Registry Editor Version 5.00 ---
 
 ; MMCSS Tweaks
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
-"NetworkThrottlingIndex"=dword:0000000a
+"NetworkThrottlingIndex"=dword:ffffffff
 "SystemResponsiveness"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
-"Affinity"=dword:00000000
-"Background Only"="False"
-"Clock Rate"=dword:00002710
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000006
-"Scheduling Category"="High"
-"SFIO Priority"="High"
 
 ; Decrease processes kill time and menu show delay
 [HKEY_CURRENT_USER\Control Panel\Desktop]
@@ -147,10 +138,6 @@ Windows Registry Editor Version 5.00 ---
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
 "SvcHostSplitThresholdInKB"=dword:04000000
 "WaitToKillServiceTimeout"="1000"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
-"NetworkThrottlingIndex"=dword:0ffffffff
-"SystemResponsiveness"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks]
 
@@ -228,15 +215,6 @@ Windows Registry Editor Version 5.00 ---
 "Scheduling Category"="Medium"
 "SFIO Priority"="Normal"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
-"Affinity"=dword:00000000
-"Background Only"="False"
-"Clock Rate"=dword:00002710
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000008
-"Scheduling Category"="High"
-"SFIO Priority"="High"
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
 "NetworkThrottlingIndex"=dword:ffffffff
 
@@ -283,3 +261,6 @@ Windows Registry Editor Version 5.00 ---
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\OneDrive]
 "DisableFileSyncNGSC"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Config]
+"VulnerableDriverBlocklistEnable"=dword:00000000
