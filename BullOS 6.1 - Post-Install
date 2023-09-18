@@ -36,16 +36,16 @@ echo which pauses the running process of the script. Press Enter and the script 
 echo It may take a couple of minutes and once it is done, BullOS will be automatically restarted.
 echo.
 
-echo VLC Install
-
-echo Notepad ++ Install 
-
-echo Boot image install
-
 echo Configuring UAC...
       reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "PromptOnSecureDesktop" /t REG_DWORD /d "00000000" /f >NUL
       reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d "00000001" /f >NUL
       reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "ConsentPromptBehaviorAdmin" /t REG_DWORD /d "00000000" /f >NUL
+
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation" /v "Model"  /t REG_SZ /d "BullOS" /f >NUL 2>nul
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation" /v "Manufacturer"  /t REG_SZ /d "DanyHolder & szzsolt24" /f >NUL 2 nul
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation" /v "SupportHours"  /t REG_SZ /d "24/7" /f >NUL 2>nul
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation" /v "SupportURL"  /t REG_SZ /d "https://bullos.hu" /f >NUL 2>nul
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "RegisteredOrganisation" /t REG_SZ /d "BullOS 6.1" /f >NUL 2>nul
 
 echo Configuring boot settings
 bcdedit /deletevalue useplatformclock >NUL 2>nul
