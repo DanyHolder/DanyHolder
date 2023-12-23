@@ -123,4 +123,4 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF" /v "LogLevel" /
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Credssp" /v "DebugLogLevel" /t REG_DWORD /d "0" /f
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /v "DisableThirdPartySuggestions" /t REG_DWORD /d "1" /f
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d "1" /f
-shutdown /r /f /t 5 /c "A BullOS 6.2.1 sikeresen elkeszult, a rendszer nehany masodperc mulva ujraindul...."
+shutdown /r /f /t 5 /c "A BullOS sikeresen elkeszult, a rendszer nehany masodperc mulva ujraindul...."
